@@ -1,0 +1,48 @@
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.34rem;
+  margin-bottom: 20rem;
+}
+
+.noImages {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--color-grey-light);
+  color: var(--color-grey-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab.active {
+  text-decoration: underline;
+}

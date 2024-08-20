@@ -1,0 +1,25 @@
+.imageContainer {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  transition: var(--transition);
+  height: 0;
+  width: 0;
+}
+.show {
+  height: 450px;
+  width: auto;
+  margin-left: 2.5rem;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 768px) {
+  .show {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}

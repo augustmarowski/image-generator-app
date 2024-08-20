@@ -1,0 +1,12 @@
+.promptContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .promptContainer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}

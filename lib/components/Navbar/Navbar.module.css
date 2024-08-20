@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  padding: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--color-grey-light);
+  color: var(--color-grey-dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab.active {
+  text-decoration: underline;
+}

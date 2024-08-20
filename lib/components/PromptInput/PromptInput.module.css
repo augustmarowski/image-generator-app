@@ -1,0 +1,71 @@
+.form {
+  width: 100%;
+}
+
+.inputContainer {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+.inputContainer textarea {
+  height: 180px;
+  resize: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  padding-bottom: 3rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #eeeeee;
+  box-shadow: var(--box-shadow);
+}
+
+.promptWithImage {
+  min-height: 450px;
+}
+
+.promptLabel {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0.8rem;
+  left: 1.5rem;
+  font-size: 1rem;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.promptLength {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 1.3rem;
+  left: 1.5rem;
+  font-size: 1rem;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.generateButton {
+  display: block;
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.errorText {
+  margin-left: 1.5rem;
+  color: var(--error-color);
+}
+
+@media (max-width: 768px) {
+  .promptWithImage,
+  .inputContainer textarea {
+    min-height: 230px;
+  }
+}
